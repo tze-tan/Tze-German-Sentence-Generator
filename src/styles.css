@@ -3,10 +3,14 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 .container {
-  max-width: 700px;
+  max-width: 600px;
   display: block;
-  margin: 60px auto;
+  margin: 60px auto 20px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -37,8 +41,14 @@ form {
   font-size: 16px;
   border: 10px gray;
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 20px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 540px;
+}
+
+.ai-output ul li {
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 footer {

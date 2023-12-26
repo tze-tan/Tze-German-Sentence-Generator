@@ -13,15 +13,14 @@ function generateSentence(event) {
   event.preventDefault();
 
   let userInput = document.querySelector("#user-input");
-  console.log(userInput.value);
-
   let apiKey = "4916caba061520co8b34c1aft75528fb";
   let prompt = `Generate 3 German sentences based on ${userInput.value} with corresponding translation in English`;
   let context =
-    "You are a beginner B1 German language student, you are looking to learn new sentences that can be used in daily life.";
+    "You are a beginner A2 German language student, you are looking to learn new sentences that can be used in daily life. Display the different sentences in HTML, in <ul> and <li> format";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log(`generating sentence with ${prompt} and ${context}`);
+  console.log(`generating sentences with user input: ${userInput.value}`);
+  console.log(`Content: ${context}`);
 
   axios.get(apiURL).then(displaySentence);
 }
