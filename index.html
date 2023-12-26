@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="src/styles.css" class="stylesheet" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>German Sentence Generator</h1>
       <div class="form">
-        <form id="form-generator">
+        <form id="sentence-generator-form">
           <input
             type="text"
             name=""
-            id=""
+            id="user-input"
             required
             autofocus
             placeholder="Enter a prompt"
@@ -23,11 +25,7 @@
           <input type="submit" value="Generate" class="generate-button" />
         </form>
       </div>
-      <div class="ai-output">
-        text placeholder
-        <br />
-        text placeholder
-      </div>
+      <div class="ai-output" id="sentence-output"></div>
     </div>
     <script src="src/javascript.js"></script>
     <footer>
