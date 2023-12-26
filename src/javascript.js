@@ -22,6 +22,10 @@ function generateSentence(event) {
   console.log(`generating sentences with user input: ${userInput.value}`);
   console.log(`Content: ${context}`);
 
+  let sentenceOutputElement = document.querySelector("#sentence-output");
+  sentenceOutputElement.classList.remove("hidden");
+  sentenceOutputElement.innerHTML = `<div class="loading"> ⏳ Generating 3 basic German sentences about ${userInput.value}. </div>`;
+
   axios.get(apiURL).then(displaySentence);
 }
 

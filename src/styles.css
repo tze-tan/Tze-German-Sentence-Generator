@@ -3,10 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-h1 {
-  text-align: center;
-}
-
 .container {
   max-width: 600px;
   display: block;
@@ -21,6 +17,7 @@ h1 {
   border-radius: 4px;
   border: none;
   width: 80%;
+  margin-right: 12px;
 }
 
 .generate-button {
@@ -41,9 +38,13 @@ form {
   font-size: 16px;
   border: 10px gray;
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 10px;
+  padding: 20px 0px;
   border-radius: 10px;
-  max-width: 540px;
+  max-width: 600px;
+}
+
+.hidden {
+  display: none;
 }
 
 .ai-output ul li {
@@ -51,10 +52,27 @@ form {
   margin-bottom: 10px;
 }
 
+.loading {
+  animation: blink-animation 1.5s steps(5, start) infinite;
+  margin-left: 10px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 13px;
   color: white;
+  margin-top: 0;
 }
 
 a {
