@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  font-size: 16px;
+}
+
 .container {
   max-width: 600px;
   display: block;
